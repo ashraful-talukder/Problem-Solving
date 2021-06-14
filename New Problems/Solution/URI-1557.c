@@ -28,7 +28,12 @@ int main()
         }
         for(i = 0 ; i < N ; i++){
             for(j = 0; j < N; j++){
-                printf("%*d ", p, arr[i][j]);
+                if(j == N-1){
+                    printf("%*d", p, arr[i][j]);
+                } else{
+                    printf("%*d ", p, arr[i][j]);
+                }
+                
             }
             printf("\n");
         }
