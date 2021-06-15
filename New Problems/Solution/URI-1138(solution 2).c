@@ -15,7 +15,6 @@ int main()
                 digits[n % 10]++;
                 n = n / 10;
             }
-
         }
         for (i = 0 ; i < 10 ; i++){
                 printf("%d ", digits[i]);
