@@ -12,30 +12,42 @@ int main()
         }
         for(s = x; s <= y; s++){
             p = s;
-            while(p>0){
+            while(p >= 1){
                 z = p % 10;
                 p = p / 10;
-                if (z == 0){
+                switch(z){
+                case 0:
                     ++a;
-                } else if (z == 1){
+                    break;
+                case 1:
                     ++b;
-                } else if (z == 2){
+                    break;
+                case 2:
                     ++c;
-                } else if (z == 3){
+                    break;
+                case 3:
                     ++d;
-                } else if (z == 4){
+                    break;
+                case 4:
                     ++e;
-                } else if (z == 5){
+                    break;
+                case 5:
                     ++f;
-                } else if (z == 6){
+                    break;
+                case 6:
                     ++g;
-                } else if (z == 7){
+                    break;
+                case 7:
                     ++h;
-                } else if (z == 8){
+                    break;
+                case 8:
                     ++i;
-                } else {
+                    break;
+                case 9:
                     ++j;
+                    break;
                 }
+
             }
         }
         printf("%d %d %d %d %d %d %d %d %d %d\n", a, b, c, d, e, f, g, h, i, j);
